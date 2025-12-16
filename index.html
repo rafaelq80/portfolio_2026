@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!--PADRÃO DE CARACTERES -->
+    <meta charset="UTF-8">
+
+    <!-- LAYOUT MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- META TAGS ESSENCIAIS -->
+    <meta name="author" content="Rafael Queiróz">
+    <meta name="description"
+        content="Portfólio de Rafael Queiróz, desenvolvedor Full Stack especializado em criar experiências digitais incríveis. Conheça meus projetos e entre em contato.">
+    <meta name="robots" content="index, follow">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- TÍTULO DA PÁGINA -->
+    <title>Portfólio do Rafael</title>
+
+</head>
+
+<body>
+
+    <!-- MENU  -->
+    <header class="flex menu_container">
+        <article class="menu_content">
+            <div id="titulo">
+                <a href="index.html">Portfólio</a>
+            </div>
+
+            <nav>
+                <ul class="flex menu_list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+
+        </article>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- #HERO -->
+        <section id="hero" class="hero_container">
+
+            <!-- BOAS VINDAS -->
+            <article class="hero_content">
+                <h4>👋 Olá, eu sou Rafael</h4>
+                <h1>Desenvolvedor Full Stack</h1>
+                <p>Transformo ideias em código e crio experiências digitais incríveis.</p>
+                <div class="buttons_container">
+                    <a href="#contact" class="botao">Entre em Contato</a>
+                    <a href="#about" class="botao_outline">Saiba Mais...</a>
+                </div>
+            </article>
+
+            <!-- IMAGEM COM ANIMAÇÃO -->
+            <figure class="hero_image">
+                <img src="./assets/img/eu.png" alt="Ilustração com uma pessoa desenvolvedora escrevendo código."
+                    class="float_animation">
+            </figure>
+
+        </section>
+
+        <!-- #ABOUT -->
+        <section id="about" class="about_container">
+
+        </section>
+
+        <!-- #PROJECTS - CARROSSEL SWIPER -->
+        <section id="projects" class="projects_container">
+            <h2>Meus Projetos</h2>
+
+            <div class="carrosel_container">
+                <!-- Swiper Container -->
+                <div class="swiper projectsSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Os cards serão inseridos aqui dinamicamente -->
+                    </div>
+                </div>
+
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- #CONTACT -->
+        <section id="contact" class="contact_container">
+
+            <!-- REDES SOCIAIS -->
+            <article class="contact_info">
+                <h3>Entre em Contato</h3>
+                <p>Sinta-se à vontade para entrar em contato comigo!</p>
+                <div class="social_container">
+                    <a href="#" target="_blank" class="social_icon" aria-label="LinkedIn">
+                        <img src="./assets/img/linkedin.svg" alt="Link para o Linkedin">
+                    </a>
+                    <a href="#" target="_blank" class="social_icon" aria-label="GitHub">
+                        <img src="./assets/img/github.svg" alt="Link para o GitHub">
+                    </a>
+                    <a href="#" target="_blank" class="social_icon" aria-label="Instagram">
+                        <img src="./assets/img/instagram.svg" alt="Link para o Instagram">
+                    </a>
+                </div>
+            </article>
+
+            <!-- FORMULÁRIO -->
+            <form action="https://formsubmit.co/7065d88cfa92a310a1da3b7a5effb0c9" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+                <span id="erro-nome"></span>
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
+                <span id="erro-email"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
+                <span id="erro-assunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui..."></textarea>
+                <span id="erro-mensagem"></span>
+
+                <button class="botao" type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        Desenvolvido por Rafael Queiróz - 2025
+    </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script JavaScript -->
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>
