@@ -30,11 +30,11 @@ O site foi projetado para ser **leve, acessível e totalmente responsivo**, gara
 │
 ├── 📄 index.html          # Página principal do portfólio
 ├── 📄 sucess.html         # Página exibida após envio do formulário
-│
 └── 📁 assets/
     ├── 📁 css/
     │   └── styles.css     # Folha de estilos principal
-    ├── 📁 img/            # Imagens e ícones utilizados
+    ├── 📁 icons/          # Logos das linguagens de programação
+    ├── 📁 img/            # Imagens do Portfólio
     ├── 📁 js/
     │   └── scripts.js     # Script principal do site
     └── 📁 docs/           # Documentação técnica complementar
