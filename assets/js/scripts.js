@@ -73,16 +73,21 @@ async function getGithubRepos() {
         repos.forEach(repo => {
             const linguagemExibir = repo.language || 'GitHub';
             const config = linguagens[repo.language] || { icone: 'github', cor: '#6b36c8' };
-            const urlIcone = `./assets/icons/${config.icone}.svg`;
+            const urlIcone = `./assets/icons/languages/${config.icone}.svg`;
             
+            const nomeFormatado = repo.name
+                .replace(/[-_]/g, ' ')
+                .replace(/[^a-zA-Z0-9\s]/g, '')
+                .toUpperCase();
+
             const descricao = repo.description 
                 ? (repo.description.length > 100 ? repo.description.substring(0, 97) + '...' : repo.description)
                 : 'Projeto desenvolvido no GitHub';
 
             const badge = `
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                    <span style="width: 0.75rem; height: 0.75rem; border-radius: 50%; background-color: ${config.cor};"></span>
-                    <span style="font-size: 0.875rem; color: var(--gray-400);">${linguagemExibir}</span>
+                <div class="project_language_badge">
+                    <span class="project_language_dot" style="background-color: ${config.cor};"></span>
+                    <span class="project_language_name">${linguagemExibir}</span>
                 </div>
             `;
 
@@ -97,12 +102,12 @@ async function getGithubRepos() {
                             <div class="project_image">
                                 <img src="${urlIcone}" 
                                      alt="Ícone ${linguagemExibir}"
-                                     onerror="this.onerror=null; this.src='https://ik.imagekit.io/vzr6ryejm/icones/github.svg';">
+                                     onerror="this.onerror=null; this.src='./assets/icons/languages/github.svg';">
                             </div>
                         </a>
                         <div class="project_content">
                             ${badge}
-                            <h3>${repo.name}</h3>
+                            <h3>${nomeFormatado}</h3>
                             <p>${descricao}</p>
                             <div class="project_tags">${tags}</div>
                         </div>
