@@ -1,0 +1,14 @@
+Pronto! Organizei todas as propriedades CSS seguindo as boas práticas de ordem de precedência:
+
+**Ordem aplicada:**
+1. **Posicionamento**: `position`, `top`, `right`, `bottom`, `left`, `z-index`
+2. **Display & Box Model**: `display`, `flex`, `grid`, `align-items`, `justify-content`, etc.
+3. **Dimensões**: `width`, `height`, `min-height`, `max-width`, etc.
+4. **Espaçamento**: `margin`, `padding`, `gap`
+5. **Bordas**: `border`, `border-radius`
+6. **Background**: `background`, `background-color`
+7. **Tipografia**: `font-size`, `font-weight`, `line-height`, `text-align`, `color`
+8. **Outros**: `overflow`, `cursor`, `object-fit`, `filter`
+9. **Transições & Animações**: `transition`, `animation`, `transform`
+
+Esta organização torna o código mais legível e facilita a manutenção, seguindo padrões amplamente aceitos pela comunidade de desenvolvimento front-end.
